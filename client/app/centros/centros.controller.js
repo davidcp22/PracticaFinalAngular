@@ -4,11 +4,11 @@
 class CentrosController {
   constructor($http, DetailAnimal) {
   }
-  
-  
-  
-  
-  
+
+  aa
+
+
+
 }
 
 angular.module('y')
