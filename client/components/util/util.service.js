@@ -59,7 +59,7 @@ function UtilService($window) {
   return Util;
 }
 
-angular.module('helpetAppApp.util')
+angular.module('helpetApp.util')
   .factory('Util', UtilService);
 
 })();

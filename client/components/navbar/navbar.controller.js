@@ -14,5 +14,5 @@ class NavbarController {
     }
 }
 
-angular.module('helpetAppApp')
+angular.module('helpetApp')
   .controller('NavbarController', NavbarController);
