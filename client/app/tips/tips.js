@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('y')
+angular.module('helpetApp')
   .config(function ($stateProvider) {
     $stateProvider
       .state('tips', {

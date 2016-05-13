@@ -37,7 +37,7 @@ class DetailAnimalComponent {
 
 }
 angular.module('helpetApp')
-  .component('DetailAnimal', {
+  .component('detailAnimal', {
     templateUrl: 'app/DetailAnimal/DetailAnimal.html',
     controller: DetailAnimalComponent
   });

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('helpetApp.DetailAnimal')
+angular.module('helpetApp')
   .service('DetailAnimal', function () {
 
     var self = this;

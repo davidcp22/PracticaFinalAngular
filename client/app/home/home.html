@@ -1,14 +1,18 @@
 <div>This is the home view.</div>
 
 
-  <div >
-    <div class="row message-container" ng-repeat="message in $ctrl.listaAnimales">
+  <div>
+    <div class="row message-container" ng-repeat="animal in $ctrl.listaAnimales">
       <div class="message">
         <div class="message-images col-sm-5">
-          <div class="message-text col-sm-7">{{message.tipo}}</div>
-          <div class="message-text col-sm-7">{{message.observacion}}</div>
+          <div class="message-text col-sm-7">{{animal.Id}}</div>
+          <div class="message-text col-sm-7">{{animal.Ubicacion}}</div>
+          <div class="message-text col-sm-7">{{animal.Tipo}}</div>
+          <div class="message-text col-sm-7">{{animal.Observacion}}</div>
+          <div class="message-text col-sm-7">{{animal.Rasgos}}</div>
+          <img class="message-text col-sm-7" href="{{animal.Imagen}}"></img>
         </div>
-        <div class="message-text col-sm-7">{{message.ubicacion}}</div>
+
       </div>
    </div>
   </div>

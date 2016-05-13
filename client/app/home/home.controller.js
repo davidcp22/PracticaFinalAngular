@@ -3,7 +3,7 @@
 
 class HomeComponent {
   constructor($http, homeService) {
-    this.message = 'Hello';
+
     this.$http = $http;
     this.homeservice = homeService;
     this.listaAnimales =[];
@@ -11,19 +11,15 @@ class HomeComponent {
   }
 
   $onInit() {
-    this.homese
-    rvice.getAnimales().then(response => {
+    this.homeservice.getAnimales().then(response => {
       this.listaAnimales = response.data;
-    console.log("desde Ctrl", this.messages);
+    console.log("desde Ctrl", response.data);
   });
   }
 
-    InfoDetalleAnimal  = this.homeservice.getDetalleAnimal(idAnimal);
-      
-  
+    //InfoDetalleAnimal  = this.homeservice.getDetalleAnimal(idAnimal);
 
-  
-  
+
 }
 
 angular.module('helpetApp')

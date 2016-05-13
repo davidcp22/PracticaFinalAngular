@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('helpetApp.tips')
+angular.module('helpetApp')
   .service('tips', function () {
 
     var self = this;

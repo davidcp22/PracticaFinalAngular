@@ -27,8 +27,39 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="row logo">
+          <div class="img-logo">
+            <img src="assets/images/logo.png">
+          </div>
+        </div>
+
+        <div class="row menu-vertical">
+          <nav>
+            <ul>
+              <li>
+                <img src=""><a href="/home">Animales</a>
+              </li>
+              <li>
+                <img src=""><a href="/centros">centros</a>
+              </li>
+              <li>
+                <img src=""><a href="/tips">tips</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div ui-view=""></div>
+      </div>
+
+    </div>
     <navbar></navbar>
-    <div ui-view=""></div>
+
+
     <footer></footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -48,11 +79,40 @@
     <![endif]-->
     <!-- build:js({client,node_modules}) app/vendor.js -->
       <!-- bower:js -->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+      <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+      <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
       <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js(.tmp) app/app.js -->
       <script src="app/app.js"></script>
       <!-- injector:js -->
+      <script src="components/util/util.module.js"></script>
+      <script src="app/main/main.controller.js"></script>
+      <script src="app/DetailAnimal/DetailAnimal.service.js"></script>
+      <script src="app/app.constant.js"></script>
+      <script src="app/centros/centros.controller.js"></script>
+      <script src="app/centros/centros.js"></script>
+      <script src="app/centros/centros.service.js"></script>
+      <script src="app/home/home.controller.js"></script>
+      <script src="app/home/home.js"></script>
+      <script src="app/home/homeService.service.js"></script>
+      <script src="app/DetailAnimal/DetailAnimal.js"></script>
+      <script src="app/main/main.js"></script>
+      <script src="app/tips/tips.controller.js"></script>
+      <script src="app/tips/tips.js"></script>
+      <script src="app/tips/tips.service.js"></script>
+      <script src="components/footer/footer.directive.js"></script>
+      <script src="components/modal/modal.service.js"></script>
+      <script src="components/navbar/navbar.controller.js"></script>
+      <script src="components/navbar/navbar.directive.js"></script>
+      <script src="app/DetailAnimal/DetailAnimal.controller.js"></script>
+      <script src="components/util/util.service.js"></script>
       <!-- endinjector -->
     <!-- endbuild -->
   </body>

@@ -7,7 +7,7 @@ class TipsComponent {
   }
 }
 
-angular.module('y')
+angular.module('helpetApp')
   .component('tips', {
     templateUrl: 'app/tips/tips.html',
     controller: TipsComponent

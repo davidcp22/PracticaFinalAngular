@@ -11,7 +11,7 @@ class CentrosController {
 
 }
 
-angular.module('y')
+angular.module('helpetApp')
   .component('centros', {
     templateUrl: 'app/centros/centros.html',
     controller: CentrosController
