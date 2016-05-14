@@ -28,17 +28,21 @@
     </div>
   </div>
 </div>
-
-<div class="row animal-container" ng-repeat="animal in $ctrl.listaAnimales">
-      <div class="message">
-        <div class="message-images col-sm-5">
-          <div class="message-text col-sm-7">{{animal.Id}}</div>
-          <div class="message-text col-sm-7">{{animal.Ubicacion}}</div>
-          <div class="message-text col-sm-7">{{animal.Tipo}}</div>
-          <div class="message-text col-sm-7">{{animal.Observacion}}</div>
-          <div class="message-text col-sm-7">{{animal.Rasgos}}</div>
-          <img class="message-text col-sm-7" href="{{animal.Imagen}}"/>
+<div class="row">
+  <div class="col-md-12">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 cuadro-animal" ng-repeat="animal in $ctrl.listaAnimales">
+            <img src="{{animal.Imagen}}"
+                 class="img-responsive">
+            <h2>{{animal.Tipo}}</h2>
+            <p>{{animal.Ubicacion}}</p>
+            <button class="btn-primary">Ver detalle</button>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
 </div>
 
