@@ -1,13 +1,12 @@
-
-
-<div class="col-md-2 cuadro-tips" ng-repeat="centros in $ctrl.listaCentros">
-  <div class="message">
-    <div class="message-images col-sm-5">
-
-      <div class="message-text col-sm-7">{{centrosNombre}}</div>
-      <div class="message-text col-sm-7">{{centros.Telefono}}</div>
-
-
+<div class="row">
+  <div class="col-md-12">
+    <div class="section">
+      <div class="row" id="lista-centros">
+        <div class="col-md-2 cuadro-centro" ng-repeat="centros in $ctrl.listaCentros">
+          <p>{{centros.Nombre}}</p>
+          <p>{{centros.Telefono}}</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

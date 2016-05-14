@@ -1,15 +1,14 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="section">
+      <div class="row" id="lista-tips">
+        <div class="col-md-2 cuadro-tips" ng-repeat="tips in $ctrl.listaTips">
 
 
-
-<div class="row" id="lista-Animales">
-<div class="col-md-2 cuadro-tips" ng-repeat="tips in $ctrl.listaTips">
-  <div class="message">
-    <div class="message-images col-sm-5">
-      <div class="message-text col-sm-7">{{tips.Id}}</div>
-      <div class="message-text col-sm-7">{{tips.Titulo}}</div>
-      <div class="message-text col-sm-7">{{tips.Tips}}</div>
+          <p>{{tips.Titulo}}</p>
+          <p>{{tips.Tips}}</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-</div>
-
