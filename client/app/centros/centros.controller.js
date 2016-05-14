@@ -9,7 +9,7 @@ class CentrosController {
 
   }
   $onInit() {
-    this.Centros.getCentros().then(response => {
+    this.centros.getCentros().then(response => {
       this.listaCentros = response.data;
     console.log("desde Ctrl", response.data);
   });
