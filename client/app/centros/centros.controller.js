@@ -2,10 +2,19 @@
 (function(){
 
 class CentrosController {
-  constructor($http, DetailAnimal) {
+  constructor($http,centros) {
+    this.$http = $http;
+    this.centros = centros;
+    this.listaCentros =[];
+
+  }
+  $onInit() {
+    this.Centros.getCentros().then(response => {
+      this.listaCentros = response.data;
+    console.log("desde Ctrl", response.data);
+  });
   }
 
-  aa
 
 
 
