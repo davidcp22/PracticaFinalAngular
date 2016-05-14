@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('helpetApp')
-  .service('centros', function () {
+  .service('centros', function ($http) {
 
     var self = this;
 
