@@ -1,5 +1,14 @@
-<div>This is the tips view.</div>
 
-<di>
-  tips
-</di>
+
+<div>
+  <div class="row message-container" ng-repeat="tips in $ctrl.listaTips">
+    <div class="message">
+      <div class="message-images col-sm-5">
+        <div class="message-text col-sm-7">{{tips.Titulo}}</div>
+        <div class="message-text col-sm-7">{{tips.Tips}}</div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
