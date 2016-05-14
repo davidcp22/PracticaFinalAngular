@@ -31,17 +31,14 @@
 <div class="row">
   <div class="col-md-12">
     <div class="section">
-      <div class="container">
-        <div class="row">
+        <div class="row" id="lista-Animales">
           <div class="col-md-2 cuadro-animal" ng-repeat="animal in $ctrl.listaAnimales">
-            <img src="{{animal.Imagen}}"
-                 class="img-responsive">
-            <h2>{{animal.Tipo}}</h2>
+            <img src="{{animal.Imagen}}"class="img-responsive">
+            <p>{{animal.Tipo}}</p>
             <p>{{animal.Ubicacion}}</p>
             <button class="btn-primary">Ver detalle</button>
           </div>
         </div>
-      </div>
     </div>
   </div>
 </div>
