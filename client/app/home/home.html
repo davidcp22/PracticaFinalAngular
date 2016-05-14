@@ -1,8 +1,35 @@
-<div>This is the home view.</div>
+<div class="row buscador">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="row">
+          <div class="col-md-offset-3 col-md-7">
+            <form role="form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="ingrese nombre animal">
+                  <span class="input-group-btn">
+                    <a class="btn btn-success" type="submit">Go</a>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="md-col-5">
+          <p>Categoria</p>
+          <select id="categorias" class="">
+            <option>perros</option>
+            <option>gatos</option>
+            <option>aves</option>
+          </select>
+      </div>
+    </div>
+  </div>
+</div>
 
-
-  <div>
-    <div class="row message-container" ng-repeat="animal in $ctrl.listaAnimales">
+<div class="row animal-container" ng-repeat="animal in $ctrl.listaAnimales">
       <div class="message">
         <div class="message-images col-sm-5">
           <div class="message-text col-sm-7">{{animal.Id}}</div>
@@ -10,9 +37,8 @@
           <div class="message-text col-sm-7">{{animal.Tipo}}</div>
           <div class="message-text col-sm-7">{{animal.Observacion}}</div>
           <div class="message-text col-sm-7">{{animal.Rasgos}}</div>
-          <img class="message-text col-sm-7" href="{{animal.Imagen}}"></img>
-        </div>
-
+          <img class="message-text col-sm-7" href="{{animal.Imagen}}"/>
       </div>
-   </div>
-  </div>
+    </div>
+</div>
+
