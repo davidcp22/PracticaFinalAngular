@@ -1,10 +1,18 @@
 <div class="row">
   <div class="col-md-12">
+
+    <div class="row">
+      <div class="col-md-12 titulo-centros">
+        <div class="alert alert-info">Listado de centros Beneficos</div>
+      </div>
+
+    </div>
+
     <div class="section">
       <div class="row" id="lista-centros">
-        <div class="col-md-2 cuadro-centro" ng-repeat="centros in $ctrl.listaCentros">
-          <p>{{centros.Nombre}}</p>
-          <p>{{centros.Telefono}}</p>
+        <div class="col-md-2 cuadro-animal" ng-repeat="centros in $ctrl.listaCentros">
+          <info-tarjeta nombre="centros.Nombre" imagen="centros.Imagen" tipo="centros.Tipo"></info-tarjeta>
+          <a class="btn btn-success" href="/detailCentros/{{centros.id}}"> ver Detalle</a>
         </div>
       </div>
     </div>
