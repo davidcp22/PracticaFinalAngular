@@ -19,7 +19,7 @@
 
       this.datailCentros.getDatailCentros().then(response => {
         this.listaCentros = response.data;
-        var idani = this.$stateParams.centroid;
+        var idani = this.$stateParams.centrosid;
         var centro = {
           nombre:"",
           tipo:"",
@@ -50,7 +50,7 @@
         console.log(this.obtenercentro);
       });
     }
-    
+
   }
 angular.module('helpetApp')
   .component('datailCentros', {
