@@ -2,38 +2,62 @@
 (function(){
 
 class DetailAnimalComponent {
-  constructor($http, DetailAnimal) {
-    this.message = 'Hello';
+  constructor($http, DetailAnimal, $stateParams) {
+
     this.$http = $http;
-    //this.detailAnimalService = DetailAnimal;
+    this.detailAnimalService = DetailAnimal;
     this.listaAnimales = [];
+    this.$stateParams = $stateParams;
+    this.idanimal;
+    this.obteneranimal;
   }
 
 
-  /*this.detailAnimalService.getDetailAnimales().then(response => {
-    this.listaAnimales = response.data;
-});
 
-  this.getDetailAnimal = function (idAnimal,this.listaAnimales)
-  {
+  $onInit() {
 
-    var animal = {
-      idAnimal: "",
-      nombreAnimal: "",
-      estadoAnimal: "",
-      ubicacionAnimal: "",
-      imagenAnimal: ""
-    }
-    angular.forEach(listaAnimales, function (item) {
-      if (item.id === id) {
-        item.id = animal.idAnimal;
-        item.nombre = animal.nombreAnimal;
-        item.estado = animal.estadoAnimal;
-        item.ubiccacion = animal.ubicacionAnimal;
+
+    this.detailAnimalService.getDetailAnimales().then(response => {
+      this.listaAnimales = response.data;
+      var idani = this.$stateParams.animalid;
+      var animal = {
+        nombre: "",
+        tipo: "",
+        imagen: "",
+        ubicacion: "",
+        rasgos: "",
+        observacion: ""
       }
+
+
+      angular.forEach(this.listaAnimales, function (item) {
+
+
+        if (item.id == idani) {
+
+           animal.nombre = item.Nombre;
+           animal.tipo = item.Tipo;
+           animal.rasgos = item.Rasgos;
+           animal.imagen = item.Imagen;
+           animal.observacion = item.Observacion;
+           animal.ubicacion = item.Ubiccacion;
+
+            console.log(animal.nombre);
+            console.log(animal.tipo);
+            console.log(animal.observacion);
+            console.log(animal.ubicacion);
+          }
+        });
+      this.obteneranimal = animal;
+      console.log(this.obteneranimal);
     });
-    return animal;
-  }*/
+
+
+  }
+
+
+
+
 
 }
 angular.module('helpetApp')

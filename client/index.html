@@ -27,18 +27,18 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+    <navbar></navbar>
 
-    <div class="row">
-      <div class="col-md-3">
+    <div class="app">
+      <div class="seccion-menu">
         <div class="row logo">
           <div class="img-logo">
-            <img src="assets/images/logo.png">
+            <img src="assets/images/logo.png" style="width: 250px">
           </div>
         </div>
-
         <div class="row menu-vertical">
           <nav>
-            <ul>
+            <ul class="menu">
               <li class="item-menu">
                 <img src=""><a  class="enlace" href="/home">Animales</a>
               </li>
@@ -52,12 +52,11 @@
           </nav>
         </div>
       </div>
-      <div class="col-md-9">
+
+      <div class="seccion-contenido">
         <div ui-view=""></div>
       </div>
-
     </div>
-
 
     <footer></footer>
 
@@ -101,6 +100,7 @@
       <script src="app/home/home.controller.js"></script>
       <script src="app/home/home.js"></script>
       <script src="app/home/homeService.service.js"></script>
+      <script src="app/infoTarjeta/infoTarjeta.directive.js"></script>
       <script src="app/DetailAnimal/DetailAnimal.js"></script>
       <script src="app/main/main.js"></script>
       <script src="app/tips/tips.controller.js"></script>

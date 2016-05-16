@@ -7,7 +7,7 @@
             <form role="form">
               <div class="form-group">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="ingrese nombre animal">
+                  <input type="text" class="form-control" placeholder="ingrese nombre animal" ng-model="buscar">
                   <span class="input-group-btn">
                     <a class="btn btn-success" type="submit">Go</a>
                   </span>
@@ -19,7 +19,7 @@
       </div>
       <div class="md-col-5">
           <p>Categoria</p>
-          <select id="categorias" class="">
+          <select id="categorias" class="" ng-model="categoria">
             <option>perros</option>
             <option>gatos</option>
             <option>aves</option>
@@ -32,10 +32,9 @@
   <div class="col-md-12">
     <div class="section">
         <div class="row" id="lista-Animales">
-          <div class="col-md-2 cuadro-animal" ng-repeat="animal in $ctrl.listaAnimales">
-            <img src="{{animal.Imagen}}"class="img-responsive">
-            <p>{{animal.Tipo}}</p>
-            <button class="btn-primary">Ver detalle</button>
+          <div class="col-md-2 cuadro-animal" ng-repeat="animal in $ctrl.listaAnimales | filter:buscar | filter:categoria">
+            <info-tarjeta nombre="animal.Nombre" imagen="animal.Imagen" tipo="animal.Tipo"></info-tarjeta>
+            <a class="btn btn-success" href="/DetailAnimal/{{animal.id}}"> ver Detalle</a>
           </div>
         </div>
     </div>

@@ -1,1 +1,22 @@
-<div>This is the DetailAnimal view.</div>
+<div class="row">
+  <div class="col-md-6">
+    <img  id="img-detalle" src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png"
+         class="img-responsive">
+  </div>
+  <div class="col-md-6">
+    <h1>{{$ctrl.obteneranimal.nombre}}</h1>
+    <h3>{{$ctrl.obteneranimal.tipo}}</h3>
+    <p>{{$ctrl.obteneranimal.rasgos}}</p>
+    <p>{{$ctrl.obteneranimal.ubicacion}}</p>
+    <p>{{$ctrl.obteneranimal.observacion}}<p>
+    <div class="row">
+      <div class="col-md-6 botones">
+        <div class="btn-adoptar">
+          <button class="btn btn-primary">Adptame</button>
+        </div>
+        <div class="ayuda-adoptar">
+          <button class="btn btn-success">Ayudame a encontrar un Hogar</button>
+        </div>
+    </div>
+  </div>
+</div>

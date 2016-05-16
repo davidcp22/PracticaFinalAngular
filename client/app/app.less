@@ -8,6 +8,45 @@
  * App-wide Styles
  */
 
+body{
+  background-color: #F1F1F1;
+}
+
+.app{
+  display: inline-flex;
+}
+
+.seccion-menu{
+  background-color: #30426A;
+}
+
+.menu{
+  padding-left: 20px;
+  list-style: none;
+}
+
+ul.menu .item-menu a {
+  text-indent: 25px;
+  font-size: 15px;
+  color: #b2bfdc;
+  line-height: 40px;
+}
+
+ul .item-menu{
+  width: 250px;
+  height: 40px;
+
+}
+
+ul .item-menu a:hover {
+  color: #fff;
+  border-left: 3px solid #e99d1a;
+}
+
+a{
+  color: white !important;
+}
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -15,44 +54,37 @@
   padding: 0.2em 0;
 }
 
-.item-menu {
+ul .item-menu a {
+  color: #fff;
+  display: block;
+  float: left;
+  text-decoration: none !important;
+  width: 250px;
 
-  cursor: pointer;
-  font-family: 'Poiret One', cursive, serif;
-  outline: 0;
-  border: 0;
-  width: 100%;
-  height: 70px;
-  padding: 20px 0 20px 20px;
-  background: #3299BB;
-  color: #fff !important;
-  font-size: 24px;
-  -webkit-box-shadow: inset 0 -1px 10px 0 rgba(0, 0, 0, .1);
-  box-shadow: inset 0 -1px 10px 0 rgba(0, 0, 0, .1);
-  -webkit-transition: background 150ms ease-in-out;
-  border: 1px solid;
-  -webkit-transition: background 1s ease-in-out;
-  -moz-transition: background 1s ease-in-out;
-  -ms-transition: background 1s ease-in-out;
-  -o-transition: background 1s ease-in-out;
-  transition: background 1s ease-in-out;
 }
 
 .enlace
 {
   color:white;
   text-decoration: none;
-
 }
 
 .enlace:active{
   color: white;
 }
 
+.navbar{
+  background-color: #30426A;
+  color: #FFFFFF;
+  font-weight: 100;
+  margin-bottom: 0pc !important;
+}
+
 /* inject:less */
 @import 'DetailAnimal/DetailAnimal.less';
 @import 'centros/centros.less';
 @import 'home/home.less';
+@import 'infoTarjeta/infoTarjeta.less';
 @import 'main/main.less';
 @import 'tips/tips.less';
 @import '../components/footer/footer.less';
