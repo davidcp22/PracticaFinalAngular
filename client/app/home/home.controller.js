@@ -52,9 +52,5 @@ angular.module('helpetApp')
   .component('home', {
     templateUrl: 'app/home/home.html',
     controller: HomeComponent
-  }).
-  component('detail', {
-  templateUrl: 'app/home/detail.html',
-  controller: HomeComponent
-});
+  });
 })();

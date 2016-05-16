@@ -24,19 +24,11 @@ class CentrosComponent {
     console.log("desde Ctrl", response.data);
   });
   }
-
-
-
-
 }
 
 angular.module('helpetApp')
   .component('centros', {
     templateUrl: 'app/centros/centros.html',
-    controller: CentrosComponent
-  });
-  component('detail', {
-    templateUrl: 'app/home/detail.html',
     controller: CentrosComponent
   });
 

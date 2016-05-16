@@ -49,20 +49,9 @@
         this.obtenercentro = centro;
         console.log(this.obtenercentro);
       });
-
-
     }
-
-
-
-
-
+    
   }
-
-
-
-
-
 angular.module('helpetApp')
   .component('datailCentros', {
     templateUrl: 'app/datailCentros/datailCentros.html',

@@ -7,8 +7,4 @@ angular.module('helpetApp')
         url: '/centros',
         template: '<centros></centros>'
       })
-      .state('detail',{
-        url:'/detailcentro/:idcentro',
-        template:'<detail></detail>'
-      });
   });
