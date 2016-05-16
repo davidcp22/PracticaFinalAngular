@@ -1,11 +1,21 @@
 'use strict';
 (function(){
 
-class CentrosController {
+class CentrosComponent {
   constructor($http,centros) {
     this.$http = $http;
     this.centros = centros;
     this.listaCentros =[];
+    this.idcentro;
+
+    this.centro = {
+      nombre:"",
+      tipo:"",
+      imagen:"",
+      ubicacion:"",
+      telefono:""
+
+    }
 
   }
   $onInit() {
@@ -23,7 +33,11 @@ class CentrosController {
 angular.module('helpetApp')
   .component('centros', {
     templateUrl: 'app/centros/centros.html',
-    controller: CentrosController
+    controller: CentrosComponent
+  });
+  component('detail', {
+    templateUrl: 'app/home/detail.html',
+    controller: CentrosComponent
   });
 
 })();
