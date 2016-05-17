@@ -37,7 +37,7 @@
             centro.nombre = item.Nombre;
             centro.tipo = item.Tipo;
             centro.imagen = item.Imagen;
-            centro.ubicacion = item.Ubiccacion;
+            centro.ubicacion = item.Ubicacion;
             centro.telefono=item.Telefono;
 
             console.log(centro.nombre);

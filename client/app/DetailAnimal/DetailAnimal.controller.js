@@ -40,7 +40,7 @@ class DetailAnimalComponent {
            animal.rasgos = item.Rasgos;
            animal.imagen = item.Imagen;
            animal.observacion = item.Observacion;
-           animal.ubicacion = item.Ubiccacion;
+           animal.ubicacion = item.Ubicacion;
 
             console.log(animal.nombre);
             console.log(animal.tipo);
